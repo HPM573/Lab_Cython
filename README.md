@@ -5,6 +5,11 @@ Cython is a superset of Python that is designed to perform like C. This creates 
 
 [Cython] (https://cython.org/)
 
-## Examples
+## Fibonacci 
+Example of using Cython on python code
 
-### 
+## Primes 
+Example of algorithm to get n prime integers that is ran on Python, C, and Cython and getting run times to see the differences
+
+## Notes
+Based on [Cython Documentation](https://cython.readthedocs.io/en/latest/index.html)
