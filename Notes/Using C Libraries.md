@@ -32,4 +32,16 @@
 
 ### Static Linking 
 - include compiler directives in .pyx file to build c-code automatically 
-- 
+- ```sources```: compiler directive that gives path of C file that will be compiled and linked (statically) into resulting extension module 
+- ```include_dirs```: relevant header files are found here 
+- command to build project: ```python setup.py build_ext -i```
+
+### Dynamic Linking
+- create new object 
+- useful if the library we are going to wrap is already installed on the system 
+
+### Mapping Functionality 
+- provide and observe interfaces
+
+### Handling Errors
+- raise errors to account for special cases 
