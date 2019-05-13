@@ -56,6 +56,6 @@ cdef extern from "math.h":
     cpdef double sin(double x)
 ```
 
-## Naming paramters
+## Naming parameters
 - provide own declarations for external C or C++ functions 
 - avoid ambiguities and make code more readable
