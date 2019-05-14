@@ -24,6 +24,11 @@ setup(
 time python setup.py build_ext --inplace
 ```
 
+Setup Compile Command in Terminal 
+```
+$ python setup.py build_ext --inplace
+```
+
 ## Time PyInstaller 
 ```
 time pyInstaller primes_python.py
