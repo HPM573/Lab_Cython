@@ -14,6 +14,17 @@
  - ```__cinit__``` -> always called immediately on construction before CPython even considers calling ```__init__```
  - avoid not initializing C pointers and having hard crashes
  - receives no parameters that were passed to constructor
+ ```
+ # queue.pyx
+
+cimport cqueue
+
+cdef class Queue:
+    cdef cqueue.Queue* _c_queue
+
+    def __cinit__(self):
+        self._c_queue = cqueue.queue_new()
+```
  
  ## Memory Management
  - Python throws ```MemoryError``` with pointer errors that can arise from insufficient memory from creating new exception  
