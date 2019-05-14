@@ -1,3 +1,5 @@
+import time
+start = time.time()
 def primes_python(nb_primes):
     p = []
     n = 2
@@ -12,4 +14,6 @@ def primes_python(nb_primes):
             p.append(n)
         n += 1
     return p
-    
+
+end = time.time()
+print(end-start)
