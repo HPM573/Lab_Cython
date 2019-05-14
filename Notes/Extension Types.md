@@ -9,3 +9,11 @@ Cython supports second kind of class -> extension types -> cdef classes
 Normal Python classes can inherit from cdef classes BUT not the other way around 
 - it also can inherit from any number of python classes and extension types 
 Need to know complete inheritance hierarchy to lay out C structs and restrict it to single inheritance
+- cpdef method is fully overridable by methods and instance attributes in Python subclasses 
+Example that makes two versions of the method available -> one fast for use from Cython and one for slower for use from Python 
+```
+cdef class Function:
+    cpdef double evaluate(self, double x) except *:
+        return 0
+```
+
