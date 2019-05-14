@@ -1,6 +1,6 @@
 import time
 start = time.time()
-import FindPrimes as cls
+import Prime.PrimeNumberCythonizedVersion.FindPrimes as cls
 
 myClass = cls.FindPrimes(n=100)
 print(myClass.get_prime_numbers())
