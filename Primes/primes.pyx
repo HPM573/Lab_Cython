@@ -1,5 +1,6 @@
 import time
 start = time.time()
+
 def primes(int nb_primes):
     cdef int n, i, len_p
     cdef int p[1000]
@@ -23,6 +24,8 @@ def primes(int nb_primes):
     # Let's return the result in a python list:
     result_as_list  = [prime for prime in p[:len_p]]
     return result_as_list
+
+primes.primes(100)
 
 end = time.time()
 print(end-start)
