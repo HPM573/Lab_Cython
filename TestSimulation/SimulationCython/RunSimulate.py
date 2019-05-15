@@ -1,6 +1,6 @@
 import time 
 start = time.time()
-import SimulationClass as Sim
+import TestSimulation.SimulationCython.CythonSimulationClass as Sim
 
 mySim = Sim.Simulation()
 mySim.simulate(n_steps=100)
