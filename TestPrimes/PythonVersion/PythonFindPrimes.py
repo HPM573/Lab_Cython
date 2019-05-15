@@ -1,4 +1,4 @@
-class FindPrimes:
+class PythonFindPrimes:
     def __init__(self, n):
         self.n = n
 
