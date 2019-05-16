@@ -2,7 +2,7 @@ import time
 import TestSimulation.SimulationPython.PythonSimulationClass as PythonSim
 import TestSimulation.SimulationCython.CythonSimulationClass as CythonSim
 
-N_STEPS = 10000000
+N_STEPS = 100000
 
 # testing the python implementation
 start = time.time()
