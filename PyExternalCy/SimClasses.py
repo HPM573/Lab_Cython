@@ -1,8 +1,7 @@
-import numpy as np
-from SimPython.SimSupport import Ave
+from Py.Support import Ave
 import csv
 import os
-import RVGs as RVGs
+import C.RVGs as RVGs
 
 
 class OneSim:

@@ -4,7 +4,7 @@ from Cython.Distutils import build_ext
 import numpy as np
 
 setup(
-    ext_modules=cythonize(["SimClasses.pyx", "SimSupport.pyx"]),
+    ext_modules=cythonize(["SimClasses.pyx", "Support.pyx"]),
     cmdclass={'build_ext': build_ext},
     include_dirs=[np.get_include()],
     compiler_directives={'embedsignature': True},

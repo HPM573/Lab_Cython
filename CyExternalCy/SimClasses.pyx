@@ -1,17 +1,18 @@
-import numpy as np
-from SimPython.SimSupport import Ave
+from Py.Support import Ave
 import csv
 import os
+import C.RVGs as RVGs
 
 
 class OneSim:
     def __init__(self, seed):
-        self.rng = np.random.RandomState(seed=seed)
+        self.rng = RVGs.RNG(seed=seed)
+        self.beta = RVGs.Beta(a=1, b=2)
         self.sum = 0
 
     def simulate(self, n_steps):
         for i in range(n_steps):
-            self.sum += self.rng.random_sample()
+            self.sum += self.rng.random_sample() + self.beta.sample(rng=self.rng)
 
 
 class MultiSim:
