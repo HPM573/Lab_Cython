@@ -1,5 +1,6 @@
 import numpy as np
-from SimPython.SimSupport import Ave
+import scipy.stats as scipy
+from Py.Support import Ave
 import csv
 import os
 
@@ -11,7 +12,7 @@ class OneSim:
 
     def simulate(self, n_steps):
         for i in range(n_steps):
-            self.sum += self.rng.random_sample()
+            self.sum += self.rng.random_sample() + scipy.beta.rvs(1, 2, 0, 1, random_state=self.rng)
 
 
 class MultiSim:
