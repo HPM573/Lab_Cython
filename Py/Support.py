@@ -1,3 +1,4 @@
+import numpy as np
 
 
 class Ave:
@@ -6,4 +7,4 @@ class Ave:
         self.data = data
 
     def get_ave(self):
-        return sum(self.data)/len(self.data)
+        return np.average(self.data)
